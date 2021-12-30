@@ -12,7 +12,6 @@
         var lista = document.getElementById('lista-pets')
         var response = await fetch('http://localhost:3000/pets')
         var arrayPets = await response.json()
-        console.log(arrayPets);
 
         for (let index = 0; index < arrayPets.length; index++) {
           var pet = arrayPets[index];
